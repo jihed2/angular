@@ -10,4 +10,6 @@ pipeline {
                             url: 'https://github.com/jihed2/angular.git']]])
                 }
             }
-        }}
+        }
+        }
+            }
