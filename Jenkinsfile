@@ -25,5 +25,12 @@ pipeline {
                 }
             }
         }
+        stage('test') {
+            steps{
+                script{
+                    sh "ng test --watch=false"
+                }
+            }
+        }
         }
             }
