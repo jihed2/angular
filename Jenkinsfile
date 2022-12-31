@@ -18,5 +18,12 @@ pipeline {
                 }
             }
         }
+        stage('version') {
+            steps{
+                script{
+                    sh "ng version"
+                }
+            }
+        }
         }
             }
