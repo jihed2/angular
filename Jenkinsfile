@@ -28,7 +28,13 @@ pipeline {
         stage('test') {
             steps{
                 script{
-                    sh "ng test"
+                    sh "ng test --single-run --browsers Chrome_no_sandbox"
+                }
+            }
+        }
+        stage('code quality') {
+            steps{
+                    sh "ng init"
                 }
             }
         }
