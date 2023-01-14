@@ -5,5 +5,5 @@ localhost
 
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python3
-ansi_user= jihed2
-ansible_become_pass= jihed123
+ansi_user=jihed2
+ansible_become_pass=jihed123
