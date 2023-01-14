@@ -14,29 +14,18 @@ pipeline {
         stage('Install') {
             steps{
                 script{
-                    sh "npm install"
+                    sh "sudo npm install"
                 }
             }
         }
-        stage('version') {
+        stage('Build') {
             steps{
                 script{
-                    sh "ng version"
+                    sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml"
                 }
             }
         }
-        stage('test') {
-            steps{
-                script{
-                    sh "ng test --single-run --browsers Chrome_no_sandbox"
-                }
-            }
-        }
-        stage('code quality') {
-            steps{
-                    sh "ng init"
-                }
-            }
+       
         }
         }
-            }
+            
