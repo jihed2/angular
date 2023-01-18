@@ -1,0 +1,7 @@
+---
+# tasks file for docker-registry
+- name: Push image to registry
+  docker_image:
+    name: devops
+    repository: registry.dwf.com:5000/devops
+    push: yes
