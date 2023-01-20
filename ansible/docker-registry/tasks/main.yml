@@ -1,7 +1,13 @@
 ---
 # tasks file for docker-registry
-- name: Push image to registry
-  docker_image:
+- name: log into DockerHub
+  docker_login:
+   username: jihed2
+   password: mdaini123
+
+- name: Tag and push to docker hub
+docker_image:
     name: devops
-    repository: registry.dwf.com:5000/devops
+    repository: jihed2/devops
+    tag: end    
     push: yes
