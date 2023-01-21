@@ -6,8 +6,8 @@
    password: mdaini123
 
 - name: Tag and push to docker hub
-docker_image:
-    name: devops
-    repository: jihed2/devops
-    tag: end    
-    push: yes
+  docker_image:
+   name: devops
+   repository: jihed2/devops  
+   tag: end    
+   push: yes
